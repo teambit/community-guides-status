@@ -16,7 +16,7 @@ jobs:
     steps:
     - name: Initialize a workspace
       run: |
-        bit new design-system my-design-system --env teambit.design/starters/design-system
+        bit new design-system my-design-system --env teambit.community/starters/design-system
     - name: Run the app component
       run: |
         cd my-design-system
