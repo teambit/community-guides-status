@@ -20,7 +20,7 @@ jobs:
     - name: Run the app component
       run: |
         cd my-analytics
-        bit run hello-world-app &
+        bit run analytics &
         sleep 160
         curl http://localhost:3000
     - name: Preview components
