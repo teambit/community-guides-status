@@ -20,14 +20,14 @@ jobs:
     - name: Run the app component
       run: |
         cd my-design-system
-        bit run hello-world-app &
-        sleep 160
+        bit run design &
+        sleep 120
         curl http://localhost:3000
     - name: Preview components
       run: |
         cd my-design-system
         bit start &
-        sleep 160
+        sleep 120
         curl http://localhost:3000
     - name: Collaborate
       run: |
