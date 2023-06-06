@@ -21,13 +21,13 @@ jobs:
       run: |
         cd my-analytics
         bit run analytics &
-        sleep 160
+        sleep 120
         curl http://localhost:3000
     - name: Preview components
       run: |
         cd my-analytics
         bit start &
-        sleep 160
+        sleep 120
         curl http://localhost:3000
     - name: Collaborate
       run: |
