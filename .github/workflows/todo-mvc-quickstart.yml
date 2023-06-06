@@ -21,13 +21,13 @@ jobs:
       run: |
         cd my-vue-todomvc
         bit run hello-world-app &
-        sleep 120
+        sleep 160
         curl http://localhost:3000
     - name: Preview components
       run: |
         cd my-vue-todomvc
         bit start &
-        sleep 120
+        sleep 160
         curl http://localhost:3000
     - name: Collaborate
       run: |
