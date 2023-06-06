@@ -1,0 +1,47 @@
+name: Design - Quick Start
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: 
+      image: bitsrc/ops:latest
+    env:
+      HOME: /home/bituser
+        
+    steps:
+    - name: Initialize a workspace
+      run: |
+        bit new design-system my-design-system --env teambit.design/starters/design-system
+    - name: Run the app component
+      run: |
+        cd my-design-system
+        bit run hello-world-app &
+        sleep 120
+        curl http://localhost:3000
+    - name: Preview components
+      run: |
+        cd my-design-system
+        bit start &
+        sleep 120
+        curl http://localhost:3000
+    - name: Collaborate
+      run: |
+        cd my-design-system
+        bit status
+    - name: Create a local scope, compile and export
+      run: |
+        mkdir my-scope && cd my-scope && bit init --bare
+        bit start --port 4000 --no-browser & sleep 200 && curl http://localhost:4000
+        cd ../my-design-system
+        bit remote add http://localhost:4000
+        bit scope rename org.scope-name my-scope --refactor
+        bit link
+        bit compile
+        bit tag --message "initial tag"
+        bit export
+    continue-on-error: false
