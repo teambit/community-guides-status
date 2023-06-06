@@ -25,7 +25,7 @@ jobs:
         curl http://localhost:3000
     - name: Preview components
       run: |
-        cd my-hello-world
+        cd my-hello-world-angular
         bit start &
         sleep 120
         curl http://localhost:3000
