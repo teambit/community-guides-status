@@ -39,7 +39,7 @@ jobs:
         bit start --port 4000 --no-browser & sleep 200 && curl http://localhost:4000
         cd ../my-vue-todomvc
         bit remote add http://localhost:4000
-        bit scope rename my-org.my-scope my-scope --refactor
+        bit scope rename org.scope-name my-scope --refactor
         bit link
         bit compile
         bit tag --message "initial tag"
