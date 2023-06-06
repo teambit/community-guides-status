@@ -1,5 +1,5 @@
 # Community Guides Status
-This repository is used continously test and validate the code examples in docs
+This repository is used continously test and validate the code examples in docs and show its status
 
 | Project         | Status |
 |--------------|--------|
