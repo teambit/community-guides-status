@@ -1,2 +1,2 @@
-# docs-workflow-tester
-This repository is used to create and execute tests to validate docs workflows
+# Doc Examples Tester
+This repository is used continously test and validate the example code in docs
