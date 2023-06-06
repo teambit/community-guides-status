@@ -3,5 +3,5 @@ This repository is used continously test and validate the code examples in docs 
 
 | Project         | Status | References |
 |--------------|--------|--------|
-| Hello React      | [![Github Action](https://github.com/teambit/community-guides-status/actions/workflows/hello-react-quickstart.yml/badge.svg)](https://github.com/teambit/community-guides-status/actions/workflows/hello-react-quickstart.yml) | [Docs Quickstart](https://bit.dev/docs/quick-start/hello-world) |
+| Hello React      | [![Github Action](https://github.com/teambit/community-guides-status/actions/workflows/hello-react-quickstart.yml/badge.svg)](https://github.com/teambit/community-guides-status/actions/workflows/hello-react-quickstart.yml) | [Docs quickstart](https://bit.dev/docs/quick-start/hello-world) |
 
