@@ -1,5 +1,5 @@
 # Community Guides Status
-This repository is used to continuously test and validate guides presented in Bit's community app, as well as other platforms
+This repository shows the "health" status of Bit community guides and quickstarts
 
 | Guide         | Status |
 |--------------|--------|
