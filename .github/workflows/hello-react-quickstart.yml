@@ -21,14 +21,12 @@ jobs:
       run: |
         cd my-hello-world
         bit run hello-world-app &
-        sleep 120
-        curl http://localhost:3000
+        checkserver http://localhost:3000 300 1
     - name: Preview components
       run: |
         cd my-hello-world
         bit start &
-        sleep 120
-        curl http://localhost:3000
+        checkserver http://localhost:3000 300 1
     - name: Collaborate
       run: |
         cd my-hello-world
@@ -36,7 +34,7 @@ jobs:
     - name: Create a local scope, compile and export
       run: |
         mkdir my-scope && cd my-scope && bit init --bare
-        bit start --port 4000 --no-browser & sleep 200 && curl http://localhost:4000
+        bit start --port 4000 --no-browser & checkserver http://localhost:4000 300 1
         cd ../my-hello-world
         bit remote add http://localhost:4000
         bit scope rename org.scope-name my-scope --refactor
