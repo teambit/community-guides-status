@@ -36,7 +36,7 @@ jobs:
         barescope my-scope my-hello-world
         cd my-hello-world
         bit scope rename org.scope-name my-scope --refactor
-        bit link
+        #bit link
         bit compile
         bit tag --message "initial tag"
         bit export
