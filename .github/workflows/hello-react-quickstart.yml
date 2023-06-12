@@ -33,10 +33,10 @@ jobs:
         bit status
     - name: Create a local scope, compile and export
       run: |
-        barescope my-scope my-hello-world
+        barescope my-org.my-scope my-hello-world
         cd my-hello-world
-        bit scope rename org.scope-name my-scope --refactor
-        #bit link
+        bit scope rename org.scope-name my-org.my-scope --refactor
+        bit link
         bit compile
         bit tag --message "initial tag"
         bit export
