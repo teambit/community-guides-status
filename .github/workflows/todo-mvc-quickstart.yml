@@ -33,7 +33,7 @@ jobs:
         bit status
     - name: Create a local scope, compile and export
       run: |
-        barescope my-scope-name my-vue-todomvc
+        barescope my-org.my-scope-name my-vue-todomvc
         cd my-vue-todomvc
         bit scope rename org.scope-name my-org.my-scope-name --refactor
         bit link
