@@ -33,7 +33,7 @@ jobs:
         bit status
     - name: Create a local scope, compile and export
       run: |
-        barescope my-scope-name my-hello-world-angular
+        barescope my-org.my-scope-name my-hello-world-angular
         cd my-hello-world-angular
         bit scope rename org.scope-name my-org.my-scope-name --refactor
         bit link
