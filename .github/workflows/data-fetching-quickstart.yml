@@ -33,9 +33,9 @@ jobs:
         bit status
     - name: Create a local scope, compile and export
       run: |
-        barescope my-scope my-data-fetching
+        barescope my-scope-name my-data-fetching
         cd my-data-fetching
-        bit scope rename org.scope-name my-scope --refactor
+        bit scope rename org.scope-name my-org.my-scope-name --refactor
         bit link
         bit compile
         bit tag --message "initial tag"
