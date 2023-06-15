@@ -35,7 +35,7 @@ jobs:
       run: |
         barescope my-org.my-scope-name my-vue-hello-world
         cd my-vue-hello-world
-        bit scope rename my-org.my-scope my-org.my-scope-name --refactor # Not the standard scope name https://bit.cloud/teambit/vue/generator/vue-starters/~code/workspace-common/constants.ts
+        bit scope rename org.scope-name my-org.my-scope-name --refactor
         bit link
         bit compile
         bit tag --message "initial tag"
